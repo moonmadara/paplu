@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rocket HTML Documentation</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+  </head>
+  <body>
+    
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Rocket</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#h-intro">Introduction</a></li>
+            <li><a href="#h-html">HTML Structure</a></li>
+            <li><a href="#h-css">CSS Files</a></li>
+            <li><a href="#h-js">JavaScript</a></li>
+            <li><a href="#h-custom">Customization</a></li>
+            <li><a href="#h-psd">PSD files</a></li>
+            <li><a href="#h-fonts">Fonts</a></li>
+            <li><a href="#h-credits">Credits</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <section class="top">
+        <div class="starter-template masthead">
+          <h1>Rocket</h1>
+          <p class="marketing-byline">Creative Multipurpose HTML Template</p>
+          <p class="lead">Documentation for Rocket - Creative Multipurpose HTML Template</p>
+          <div class="text-center">
+            <a href="http://themeforest.net/user/dan_fisher#contact" class="btn btn-primary">Item Support</a>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <div class="jumbotron">
+               Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/dan_fisher">here</a>. Thanks so much!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="section" id="h-intro">
+        <div class="page-header">
+          <h3>Introduction <small>template features</small></h3>
+        </div>
+        <p>Thank you so much for purchasing this template called <strong>Rocket</strong>. Please feel free to contact us if you have question or problem about this template. No guarantees, but we will do our best to provide you with the best possible assistance.</p>
+        <br>
+        <h4>Features</h4>
+        <ul>
+          <li>100% Responsive Layout Design</li>
+          <li>HTML5 and CSS3</li>
+          <li>Bootstrap 3.3.1</li>
+          <li>40+ html files</li>
+          <li>Multiple + Single pages</li>
+          <li><strong>Revolution Slider ($14)</strong></li>
+          <li>CSS3 Animation</li>
+          <li>Flickr Widget</li>
+          <li>Working contact form (with validation)</li>
+          <li>Google map integration (custom map skin)</li>
+          <li>Filtered gallery (built on Isotope2)</li>
+          <li>FontAwesome icons (500+)</li>
+          <li>Shop pages</li>
+          <li>3 Blog layouts</li>
+          <li>Special pages (Under Construction, Coming Soon and 404)</li>
+          <li>LESS files included</li>
+          <li>PSD files included ($13)</li>
+          <li>Documentation</li>
+          <li>and much more...</li>
+        </ul>
+      </section>
+      <!-- Introduction / End -->
+
+      <!-- Structure -->
+      <section class="section" id="h-structure">
+        <div class="page-header">
+          <h3>Structure <small>files structure</small></h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            Once downloaded, unzip the compressed folder to see the structure of the <strong>Rocket</strong>. You'll see next structure:
+          </div>
+          <div class="col-md-8">
+            <div class="highlight"><pre><code class="bash">rocket/
+├── css/
+│   └── *.less
+|   └── *.css
+├── images/
+│   └── samples/
+│       └── *.jpg, *.png
+│   └── *.jpg, *.png, *.ico
+├── js/
+│   └── *.js
+├── php/
+│   └── *.php
+└── vendor/
+    └── bootstrap/
+    └── entypo/
+    └── font-awesome/
+    └── isotope/
+    └── jcountdown/
+    └── jquery/
+    └── magnific-popup/
+    └── nouislider/
+    └── owl-carousel/
+    └── royalslider/
+    └── rs-plugin/
+    └── *.js
+</code></pre></div>
+          </div>
+        </div>
+      </section>
+      <!-- Structure / End -->
+
+
+      
+
+      <!-- HTML Structure -->
+      <section class="section" id="h-html">
+        <div class="page-header">
+          <h3>HTML Structure <small>markup customization and highlights</small></h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            This template based on a responsive layout. All of the information within the main content area is nested within a body tag. The general template structure is the same throughout the template. Here is the general structure.
+          </div>
+          <div class="col-md-8">
+<pre class="brush: html">
+<!-- Page Loader -->
+<div class="page-loader">
+  <div class="loader">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
+</div>
+<!-- End Page Loader -->
+
+<div class="page-wrapper">
+  <div class="top-wrapper top-wrapper__bg1" id="top">
+    
+    <!-- Header -->
+    <header class="header header__fixed">
+      <div class="header-main">
+        <div class="container">
+
+          ...
+          
+        </div>
+      </div>
+      
+    </header>
+    <!-- Header / End -->
+
+  </div>
+  
+  <!-- Content -->
+  <div class="content-wrapper">
+    
+    <!-- Page Section (About) -->
+    <section class="page-section" id="section-about">
+      <div class="container">
+
+        ...
+
+      </div>
+    </section>
+    <!-- Page Section (About) / End -->
+
+  </div>
+  <!-- Content / End -->
+
+  <!-- Footer -->
+  <footer class="footer page-section">
+    <div class="container">
+      <div class="footer-inner">
+
+        ...
+
+
+      </div>
+    </div>
+  </footer>
+  <!-- Footer / End -->
+  
+
+</div>
+
+
+<!-- Back to Top -->
+<div id="back-top">
+  <div class="link-holder scroll-local">
+    <a href="#top" class="top-link"><i class="fa fa-chevron-up"></i></a>
+  </div>
+  <div class="link-holder scroll-local">
+    <a href="#section-contacts" class="contacts-link" data-toggle="tooltip" data-placement="left" title="Contact Us"><i class="fa fa-envelope"></i></a>
+  </div>
+</div>
+<!-- Back to Top / End -->
+    
+  
+
+</pre>
+          </div>
+        </div>
+
+
+        <hr>
+
+
+        <h4>Logo</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <p>As you can see there are two kind of logos: <strong>Text based</strong> (by default) and <strong>Image based</strong>. You can choose prefered variant by removing html comments.</p>
+            <div class="alert alert-warning">Don't forget to comment or delete another variant.</div>
+          </div>
+          <div class="col-md-8">
+<pre class="brush:html">
+<!-- Logo -->
+<div class="logo">
+  <a href="#top"><img src="images/logo.png" alt="Rocket"></a> 
+  <!-- <h1><a href="index.html">Rocket</a></h1> -->
+</div>
+</pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <h4>Top Bar</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <p>To add Top Bar in the Header add the next code inside the <code>.header</code>:</p>
+          </div>
+          <div class="col-md-8">
+<pre class="brush:html">
+<!-- Top Bar -->
+<div id="header-top-bar" class="h-top-bar h-top-bar__layout1 h-top-bar__color1 h-top-bar__border-between-items h-top-bar__border-between-items__dashed">
+  <div class="container">
+    <div class="h-top-bar_item h-top-bar_item__phone"> +1-234-567-8910</div>
+    <div class="h-top-bar_item h-top-bar_item__email">
+      <a href="mailto:sales@dan-fisher.com">sales@dan-fisher.com</a>
+    </div>
+    <div class="h-top-bar_item h-top-bar_item__login">
+      <a href="#" title="Login" class="h-top-bar_link h-top-bar_link__sign-in">Login</a>
+      <span class="h-top-bar_item__login-txt">or</span>
+      <a href="#" title="Register" class="h-top-bar_link h-top-bar_link__sign-up"> Register </a>
+    </div>
+  </div>
+</div>
+<!-- Top Bar / End -->
+</pre>
+          </div>
+        </div>
+
+        <hr>
+
+        <h4>Main Navigation</h4>
+        <div class="row">
+          <div class="col-md-4">
+            If you're building a multipage site please use next navigation. It's a mega menu based navigation.
+          </div>
+          <div class="col-md-8">
+<pre class="brush:html">
+<div id="main-nav" class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Elements (Mega Menu) -->
+    <li class="dropdown fhmm-fw">
+      <a href="index.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">Features</a>
+      <a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
+
+      <ul class="dropdown-menu fullwidth">
+        <li class="fhmm-content withoutdesc">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 class="title">Elements</h3>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li><a href="elements-accordions.html"><i class="fa fa-plus-square"></i> Accordions</a></li>
+                    <li><a href="elements-alerts.html"><i class="fa fa-exclamation-triangle"></i> Alerts</a></li>
+                    <li><a href="elements-buttons.html"><i class="fa fa-chevron-circle-right"></i> Buttons</a></li>
+                    <li><a href="elements-fa-icons.html"><i class="fa fa-star"></i> FontAwesome Icons</a></li>
+                    <li><a href="elements-features.html"><i class="fa fa-lightbulb-o"></i> Features</a></li>
+                    <li><a href="elements-forms.html"><i class="fa fa-align-justify"></i> Forms</a></li>
+                    <li><a href="elements-grid.html"><i class="fa fa-th"></i> Grid</a></li>
+                    <li><a href="elements-images.html"><i class="fa fa-picture-o"></i> Images</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li><a href="elements-pricing.html"><i class="fa fa-th-large"></i> Pricing</a></li>
+                    <li><a href="elements-progress.html"><i class="fa fa-tasks"></i> Progress Bars</a></li>
+                    <li><a href="elements-sections.html"><i class="fa fa-square-o"></i> Sections</a></li>
+                    <li><a href="elements-sliders.html"><i class="fa fa-random"></i> Sliders</a></li>
+                    <li><a href="elements-tables.html"><i class="fa fa-table"></i> Tables</a></li>
+                    <li><a href="elements-tabs.html"><i class="fa fa-columns"></i> Tabs</a></li>
+                    <li><a href="elements-testimonials.html"><i class="fa fa-quote-left"></i> Testimonials</a></li>
+                    <li><a href="elements-typography.html"><i class="fa fa-font"></i> Typography</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <h3 class="title">Pages</h3>
+              <ul role="menu">
+                <li><a href="404.html">404 Error</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+                <li><a href="under-construction.html">Under Construction</a></li>
+              </ul><!-- end drop down menu -->
+            </div>
+            <div class="col-sm-3">
+              <h3 class="title">Text</h3>
+              <div class="fhmm-content-inner">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ante arcu, malesuada et ex vitae, pulvinar dictum eros. Nullam imperdiet sagittis.</p>
+
+                <p>Cras ultricies nisl ac velit vehicula, a euismod magna cursus. Quisque a felis ut felis malesuada dignissim.</p>
+              </div>
+            </div>
+          </div><!-- end row -->
+        </li><!-- end grid demo -->
+      </ul><!-- end drop down menu -->
+    </li>
+    <!-- Elements (Mega Menu) / End -->
+
+    <li><a href="gallery-main.html">Our Work</a></li>
+
+    <li class="dropdown">
+      <a href="#" data-toggle="dropdown" class="dropdown-toggle dropdown-toggle__caret-holder">Blog</a>
+      <a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="blog-right-sidebar.html">Blog - Right Sidebar</a></li>
+        <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
+        <li><a href="blog-masonry.html">Blog - Masonry</a></li>
+        <li><a href="blog-single-full-width.html">Post - Full Width</a></li>
+        <li><a href="blog-single-right-sidebar.html">Post - Right Sidebar</a></li>
+        <li><a href="blog-single-left-sidebar.html">Post - Left Sidebar</a></li>
+      </ul><!-- end drop down menu -->
+    </li>
+
+    <!-- Shop (Mega Menu) -->
+    <li class="dropdown fhmm-fw">
+      <a href="index.html" data-toggle="dropdown" class="dropdown-toggle disabled dropdown-toggle__caret-holder">Shop</a>
+      <a class="dropdown-toggle dropdown-toggle__caret"><b class="caret"></b></a>
+
+      <ul class="dropdown-menu fullwidth">
+        <li class="fhmm-content withoutdesc">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3 class="title">Pages</h3>
+              <ul>
+                <li><a href="shop-right-sidebar.html">Shop - Right Sidebar</a></li>
+                <li><a href="shop-left-sidebar.html">Shop - Left Sidebar</a></li>
+                <li><a href="shop-fullwidth.html">Shop - Full Width</a></li>
+                <li><a href="shop-single-product.html">Shop - Product</a></li>
+                <li><a href="shop-checkout.html">Shop - Checkout</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="title">Products</h3>
+              <ul>
+                <li><a href="shop-single-product.html">Product Name #1</a></li>
+                <li><a href="shop-single-product.html">Product Name #2</a></li>
+                <li><a href="shop-single-product.html">Product Name #3</a></li>
+                <li><a href="shop-single-product.html">Product Name #4</a></li>
+                <li><a href="shop-single-product.html">Product Name #5</a></li>
+                <li><a href="shop-single-product.html">Product Name #6</a></li>
+                <li><a href="shop-single-product.html">Product Name #7</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="title">Featured</h3>
+              <!-- Product -->
+              <div class="product-item">
+                <figure class="product-thumbnail">
+                  <img src="images/samples/product-img1-cart.jpg" alt="" class="thumbnail img-responsive">
+                  <span class="product-btn-group">
+                    <a href="images/samples/gallery-l-img2.jpg" title="T-shirt with logo" class="btn btn-primary btn-single-icon product-popup magnific-popup-link"><i class="fa fa-plus"></i></a>
+                    <a href="shop-single-product.html" class="btn btn-primary btn-single-icon product-link"><i class="fa fa-link"></i></a>
+                  </span>
+                </figure>
+                <div class="product-info">
+                  <h3 class="product-name">T-shirt with logo</h3>
+                  <span class="product-brand">Company T-shirts</span>
+                  <a href="#" class="btn btn-primary btn-has-icon icon-right btn-shopping-cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Add to Cart</span>
+                  </a>
+                </div>
+                <footer class="product-footer">
+                  <div class="price">
+                    <ins><span class="amount">£44.80</span></ins>
+                    <del><span class="amount">£56.00</span></del>
+                  </div>
+                  <div class="star-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </footer>
+              </div>
+              <!-- Product / End -->
+            </div>
+          </div><!-- end row -->
+        </li><!-- end grid demo -->
+      </ul><!-- end drop down menu -->
+    </li>
+    <!-- Shop (Mega Menu) / End -->
+    <li class="item-has-search">
+      <form class="form-inline form-search__nav">
+        <input type="text" value="" class="nav-search-txt">
+        <i class="fa fa-search"></i>
+      </form>
+    </li>
+    <li class="item-has-cart dropdown dropdown-right fhmm-fw">
+      <div class="shopping-cart">
+
+        <span class="cart-total">$ 526.00</span>
+        <a href="#" data-toggle="dropdown" class="cart-icon dropdown-toggle dropdown-toggle__caret-holder"><i class="fa fa-shopping-cart"></i></a>
+        <span class="cart-number">3</span>
+
+        <ul class="dropdown-menu half half-right">
+          <li class="fhmm-content withoutdesc">
+            <!-- Shopping Cart -->
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#" class="product-thumb-holder"><img src="images/samples/product-thumb-sm-1.jpg" alt="" class="product-thumb"></a>
+                    <h4 class="product-name"><span class="product-count">1x</span> - T-shirt with logo.</h4>
+                    <span class="product-desc-alt">Etiam rhoncus. Maecenas tempus.</span>
+                  </td>
+                  <td class="product-price">$284.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="product-thumb-holder"><img src="images/samples/product-thumb-sm-2.jpg" alt="" class="product-thumb"></a>
+                    <h4 class="product-name"><span class="product-count">2x</span> - T-shirt with logo.</h4>
+                    <span class="product-desc-alt">Etiam rhoncus. Maecenas tempus.</span>
+                  </td>
+                  <td class="product-price">$121.00</td>
+                </tr>
+                <tr>
+                  <td class="product-subtotal-txt">Subtotal</td>
+                  <td class="product-subtotal">$526.00</td>
+                </tr>
+                <tr>
+                  <td class="product-checkout">
+                    <button type="submit" class="btn btn-primary btn-has-icon btn-confirm"><i class="fa fa-shopping-cart"></i> Checkout</button>
+                  </td>
+                  <td class="product-close">
+                    <a href="#" class="btn btn-default btn-single-icon btn-cancel"><i class="fa fa-times"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Shopping Cart / End -->
+          </li><!-- end grid demo -->
+        </ul><!-- end drop down menu -->
+
+      </div>
+    </li>
+  </ul><!-- end nav navbar-nav -->
+</div><!-- end #main-nav -->
+</pre>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="col-md-4">
+            For one page sites please use this navigation
+          </div>
+          <div class="col-md-8">
+<pre class="brush:html">
+  <div id="main-nav" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav scroll-local">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#section-about">About</a></li>
+      <li><a href="#section-gallery">Gallery</a></li>
+      <li><a href="#section-products">Products</a></li>
+      <li><a href="#section-pricing">Pricing</a></li>
+      <li><a href="#section-blog">Blog</a></li>
+      <li><a href="#section-contacts">Contacts</a></li>
+    </ul><!-- end nav navbar-nav -->
+  </div><!-- end #main-nav -->
+</pre>
+          </div>
+        </div>
+
+
+      </section>
+      <!-- HTML Structure / End -->
+
+      <!-- CSS Structure -->
+      <section class="section" id="h-css">
+        <div class="page-header">
+          <h3>CSS Structure <small>styles customization and highlights</small></h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Stylesheets</h4>
+            Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:
+          </div>
+          <div class="col-md-8">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>style.css</code></td>
+                  <td>Base file that includes all theme styles.</td>
+                </tr>
+                <tr>
+                  <td><code>animate.min.css</code></td>
+                  <td>A cross-browser library of CSS animations. As easy to use as an easy thing.
+<a href="http://daneden.github.io/animate.css">http://daneden.github.io/animate.css</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <h4>css/style.css</h4>
+            <p>This file includes all variables used in this template. If you want to change style and colors of the template you should start from this file.</p>
+          </div>
+          <div class="col-md-8">
+<pre class="brush:css">
+/* Table of Content
+==================================================
+  1. Scaffolding
+    1.1. Body reset
+    1.2. Links
+    1.3. Images
+    1.4. Horizontal rules
+
+  2. Typography
+    2.1. Headings
+    2.2. Body text
+    2.3. Titles
+    2.4. Lists
+    2.5. Blockquotes
+    2.6. Emphasis & misc
+
+  3. Tables
+    3.1. Base table styles
+    3.2. Condensed table
+    3.3. Bordered table
+    3.4. Zebra-striping
+    3.5. Striped Vertical
+    3.6. Hover effect
+
+  4. Buttons
+    4.1. Base styles
+    4.2. Alternate buttons
+    4.3. Link buttons
+    4.4. Loading Button
+    4.5. Button Sizes
+
+  5. Tabs
+    5.1. Nav
+    5.2. Nav Tabs
+    5.3. Nav Tabs Pills
+    5.4. Tabs Content
+
+  6. Sections
+    6.1. Page Section Default
+    6.2. Page Section Dark
+    6.3. Page Section Darkest
+
+  7. Breadcrumb
+
+  8. Panels
+    8.1. Base class
+    8.2. Panels with Icons
+    8.3. Panels color styling
+    8.4. Accordion (features)
+
+  9. Circle Icon
+
+  10. Testimonials & Reviews
+    10.1. Testimonial
+    10.2. Review
+
+  11. Progress Bars
+    11.1. Bar itself
+    11.2. Variations
+    11.3. Orientations
+    11.4. Condensed
+
+  12. Pricing Tables
+
+  13. Tooltip
+
+  14. Social Icons
+
+  15. Form Elements
+    15.1. Legend
+    15.2. Form control
+    15.3. Feedback states
+    15.4. Text input groups
+    15.5. Custom Radio Buttons
+    15.6. Custom Checkboxes
+    15.7. Custom Select
+    15.8. Contact Form
+
+  16. Dropdown menus
+
+  17. Alerts
+    17.1. Base
+    17.2. Dismissible alerts
+    17.3. Alternate styles
+
+  18. Feature Box
+
+  19. Pager pagination
+
+  20. Wells
+    20.1. Base class
+    20.2. Sizes
+
+  21. Owl Carousel
+    21.1. Base
+    21.2. One Slide
+    21.3. Logo Slider
+    21.4. Pricing Slider
+    21.5. Vertical Slider
+    21.6. Custom Controls
+
+  22. Jumbotron
+
+  23. Blog
+    23.1. Post
+    23.2. Single post
+    23.3. Comment List
+    23.4. Comments Form
+    23.5. Widgets
+      - Standard Widgets
+      - Categories
+      - Search Form
+      - Tags Cloud
+      - Flickr
+      - Recent Posts (Carousel)
+      - Best Sellers
+    23.6. Blog Masonry Layout
+
+  24. Gallery
+    24.1. Gallery Feed and Filter
+    24.2. Single Gallery Project
+
+  25. Magnific Popup
+
+  26. Shop
+    26.1. Product Filter
+    26.2. Product Card
+    26.3. Single Product
+
+  27. Pagination
+
+  28. Price Filter
+
+  29. Page Loader
+
+  30. Header
+    30.1. Top Wrapper
+    30.2. Logo
+    30.3. Navigation
+    30.4. Search Form
+    30.5. Shopping Cart
+
+  31. Revolution Slider (Custom styles)
+
+  32. Static Header
+
+  33. Footer
+    33.1. Footer Social Links
+    33.2. Footer Text
+
+  34. Page 404
+
+  35. Coming Soon
+
+  36. Under Construction
+
+  37. Timeline
+
+  38. Google Map
+
+  39. Back To Top
+
+  40. Logos List
+
+  41. Helpers
+*/
+</pre>
+
+          </div>
+        </div>
+        
+      </section>
+      <!-- CSS Structure / End -->
+
+      <!-- JavaScript -->
+      <section class="section" id="h-js">
+        <div class="page-header">
+          <h3>JavaScript <small>list of scripts</small></h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <h4>JavaScript Files</h4>
+            <p>Here is a list of javascript files used in this template.</p>
+          </div>
+          <div class="col-md-8">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>File</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>vendor/jquery-1.11.0.min.js</code></td>
+                  <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+                </tr>
+                <tr>
+                  <td><code>custom.js</code></td>
+                  <td>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.</td>
+                </tr>
+                <tr>
+                  <td><code>jquery.appear.js</code></td>
+                  <td>This plugin can be used to prevent unnecessary processeing for content that is hidden or is outside of the browser viewport.</td>
+                </tr>
+                <tr>
+                  <td><code>js/contact-form.js</code></td>
+                  <td>This script contains javascript validation part for contact form.</td>
+                </tr>
+                <tr>
+                  <td><code>nouislider/</code></td>
+                  <td>noUiSlider is a range slider without bloat. It offers a ton off features, and it is as small, lightweight and minimal as possible, which is great for mobile use on the many supported devices</td>
+                </tr>
+                <tr>
+                  <td><code>jquery.flickrfeed.js</code></td>
+                  <td>This plugin works by pulling a JSON feed from Flickr and applying the data it gets back to a template.</td>
+                </tr>
+                <tr>
+                  <td><code>jquery.isotope.min.js</code><br>
+                    <code>jquery.imagesloaded.min.js</code></td>
+                  <td>An exquisite jQuery plugin for magical layouts.</td>
+                </tr>
+                <tr>
+                  <td><code>jquery.jcountdown.min.js</code></td>
+                  <td>This plugin used on Coming Soon page used for countdown timer.</td>
+                </tr>
+                <tr>
+                  <td><code>magnific-popup</code></td>
+                  <td>Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device.</td>
+                </tr>
+                <tr>
+                  <td><code>wow.min.js</code></td>
+                  <td>Reveal CSS animation as you scroll down a page. By default, you can use it to trigger animate.css animations. But you can easily change the settings to your favorite animation library.</td>
+                </tr>
+                <tr>
+                  <td><code>jquery.gmap3.min.js</code></td>
+                  <td>jQuery plugin for displaying Google Map.</td>
+                </tr>
+                <tr>
+                  <td><code>owl.carousel.js</code></td>
+                  <td>Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </section>
+      <!-- JavaScript / End -->
+
+      <!-- Template Customization -->
+      <section class="section" id="h-custom">
+        <div class="page-header">
+          <h3>Customization <small>template customization and styling</small></h3>
+        </div>
+
+        <h4>How to Compile LESS files Using WinLess</h4>
+        <div class="row">
+          <div class="col-md-4">
+             <p>First, if you don’t know what is LESS you may want to take a look at <a href="http://lesscss.org/">lesscss.org</a></p>
+          </div>
+          <div class="col-md-8">
+            <p>Now let’s get started. First download the winless and then install it into your computer. The installation is very easy.</p>
+
+            <ol>
+              <li>Open the installed WinLess</li>
+              <li>Then add <code>css/skins/</code> folder into the winless by clicking add folder button then choose the folder</li>
+              <li>Hit compile button at bottom right.</p>
+              </li>
+              <li>Open your html file. In the <code>&lt;head&gt;</code> section you need to replace this code
+                <pre class="brush:html">
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skins/red.css">
+                </pre>
+                with next one
+    <pre class="brush:html">
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skins/skin.css">
+    </pre>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <hr>
+        
+        <h4>How to work with Revolution Slider?</h4>
+        <div class="row">
+          <div class="col-md-12">
+            <p>We provide full documentation about Revolution Slider and you can find it in <code>Documentation/Revolution Slider Documentation/documentation.html</code></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <h4>Google Map</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <p>To use google map you must include <strong>jquery.gmap3.min.js</strong> file before closing body tag of your HTML document and api script:</p>
+          </div>
+          <div class="col-md-8">
+            <pre class="brush: html">
+<!-- Google Map -->
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="vendor/jquery.gmap3.min.js"></script>
+</pre>
+    <p>Start by creating a <strong>"div"</strong> tag with <strong>class="googlemap-wrapper"</strong>, and then insert <strong>"div"</strong> with <strong>id="map_canvas"</strong> and <strong>class="map-canvas"</strong> this part is mandatory because the jquery plugin targets that id specifically.</p>
+<pre class="brush: html">
+<!-- Google Map -->
+<div class="googlemap-wrapper" id="gmapWrapper">
+  <div id="map_canvas" class="map-canvas"></div>
+</div>
+<!-- Google Map / End -->
+</pre>
+    <p>Once you've done that you need to change position <strong>'40.717599,-74.005136'</strong>. You can find appropriate value here maps.google.com</p>
+<pre class="brush: html">
+marker:{
+  address: '40.719939, -74.010579' 
+},
+</pre>
+          </div>
+        </div>
+
+      <hr>
+
+      <h4 id="contact-form">Contact Form</h4>
+
+      <div class="row">
+        <div class="col-md-4">
+          <p>This template contains fully working contact form. All you need is replace you actual e-mail address.</p>
+        </div>
+        <div class="col-md-8">
+
+<p>In order to receive messages you need to edit line 8 of <strong>php/contact-form.php</strong> file and type in your own email address:</p>
+<pre class="brush: php">
+$to = 'YOUR_EMAIL_GOES_HERE';
+</pre>  
+        
+        <br>
+        
+        <h5>How to make field not required?</h5>
+        <ol>
+          <li>
+              Open <code>js/contact.js</code>
+          </li>
+          <li>
+              On row 96 you can find rules for fields. Find field you want to make not required and set it to false:
+              <code>required: false</code>
+          </li>
+          <li>
+              Open <code>contacts.html</code> and find field markup.
+          </li>
+          <li>
+              Remove <code>*</code> from the label.
+          </li>
+        </ol>
+
+
+        <br>
+        
+        <h5>How to add fields to the contact form?</h5>
+        <ol>
+          <li>
+            Open <code>contacts.html</code> and add next html inside contact form markup:
+            <p>
+              <img src="images/1.jpg" alt="" class="img-responsive">
+            </p>
+            <br>
+          </li>
+          <li>
+            Open <code>js/contact.js</code> and add 
+            <p>
+              <img src="images/2.jpg" alt="" class="img-responsive">
+            </p>
+            <br>
+          </li>
+          <li>
+            In <code>js/contact.js</code> set validators
+            <p>
+              <img src="images/3.jpg" alt="" class="img-responsive">
+            </p>
+            <br>
+          </li>
+          <li>
+            Open <code>php/contact-form.php</code> and add next code
+            <p>
+              <img src="images/4.jpg" alt="" class="img-responsive">
+            </p>
+            <br>
+          </li>
+          
+        </ol>
+
+        <br>
+
+        <h5>How to add dropdowns and checkboxes to the contact form?</h5>
+        <ol>
+          <li>
+            Open <code>contacts.html</code> and add next html inside contact form markup:
+            <p>
+              <img src="images/5.jpg" alt="" class="img-responsive">
+            </p>
+            <br>
+          </li>
+          <li>
+            Open <code>js/contact.js</code> and add 
+            <p>
+              <img src="images/6.jpg" alt="" class="img-responsive">
+            </p>
+            <br>
+          </li>
+          <li>
+            Open <code>php/contact-form.php</code> and add next code
+            <p>
+              <img src="images/7.jpg" alt="" class="img-responsive">
+            </p>
+            <br>
+          </li>
+        </ol>
+        </div>
+      </div>
+
+    <hr>
+
+    <h4 id="flickr">Flickr</h4>
+    <div class="row">
+      <div class="col-md-4">
+        <p>To use flickr feed widget you need to change flickr id:</p>
+      </div>
+      <div class="col-md-8">
+        <ol>
+          <li>Open <strong>js/custom.js</strong></li>
+          <li>
+        Change Flickr id (row 365)
+<pre class"brush: js">
+id: '52617155@N08'
+</pre>
+          </li>
+          <li>Save your changes</li>
+        </ol>
+      </div>
+    </div>
+    
+    
+        
+      </section>
+      <!-- Template Customization / End -->
+
+      <!-- PSD Files -->
+      <section class="section" id="h-psd">
+        <div class="page-header">
+          <h3>PSD Files <small>psd files included</small></h3>
+        </div>
+
+        <p>Rocket package includes 23 PSD files:</p>
+        <ol>
+          <li>01-Main.psd</li>
+          <li>02-Main-With-Slider.psd</li>
+          <li>03-Main-With-iPad.psd</li>
+          <li>04-Main-With-iPhone.psd</li>
+          <li>05-Shop-Product-Page.psd</li>
+          <li>06-Shop-Main-Page-1.psd</li>
+          <li>07-Shop-Main-Page-2.psd</li>
+          <li>08-Shop-Main-Page-3.psd</li>
+          <li>09-Shop-Checkout.psd</li>
+          <li>10-Blog-Main-Masonry-1.psd</li>
+          <li>11-Blog-Main-2.psd</li>
+          <li>12-Blog-Main-3.psd</li>
+          <li>13-Blog-Page.psd</li>
+          <li>14-Blog-Simple-Page-1.psd</li>
+          <li>15-Blog-Simple-Page-2.psd</li>
+          <li>16-Gallery-Main.psd</li>
+          <li>17-Gallery-Page.psd</li>
+          <li>18-Page-404.psd</li>
+          <li>19-Coming-Soon.psd</li>
+          <li>20-Under-Construction.psd</li>
+          <li>21-Page-Elements.psd</li>
+          <li>22-Typography.psd</li>
+          <li>23-Page-Elements+fields.psd</li>
+        </ol> 
+      </section>
+      <!-- PSD Files / End -->
+
+      <!-- Fonts -->
+      <section class="section" id="h-fonts">
+        <div class="page-header">
+          <h3>Fonts <small>Fonts included</small></h3>
+        </div>
+
+        <p>We've used various types of fonts in this template.</p>
+
+        <h5>Fonts</h5>
+        <ol>
+          <li><strong>Open Sans</strong> (Google Web Font: <a href="http://www.google.com/fonts#ChoosePlace:select/Collection:Open+Sans">http://www.google.com/fonts#ChoosePlace:select/Collection:Open+Sans</a>)</li>
+           <li><strong>Exo 2</strong> (Google Web Font: <a href="http://www.google.com/fonts#UsePlace:use/Collection:Exo+2">http://www.google.com/fonts#UsePlace:use/Collection:Exo+2</a>)</li>
+        </ol>
+
+        <h5>Icon Fonts</h5>
+        <ol>
+          <li>FontAwesome 4.3.0 <a href="http://fontawesome.io">http://fontawesome.io</a></li>
+        </ol>
+        
+      </section>
+      <!-- Fonts / End -->
+
+      <!-- Fonts -->
+      <section class="section" id="h-credits">
+        <div class="page-header">
+          <h3>Credits <small>Some of your credits and sources</small></h3>
+        </div>
+
+        <h5>JavaScript</h5>
+        <ol>
+          <li><a href="http://jquery.com">jQuery</a></li>
+          <li><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">Revolution Slider</a> by ThemePunch</li>
+          <li><a href="http://jasonweaver.name/lab/flexiblenavigation/">FlexNav</a></li>
+          <li><a href="http://isotope.metafizzy.co/">Isotope</a></li>
+          <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+          <li><a href="http://owlgraphic.com/owlcarousel/">OWL Carousel</a></li>
+          <li><a href="http://fitvidsjs.com/">FitVids</a></li>
+          <li><a href="http://gmap3.net/">GMap3</a></li>
+        </ol>
+
+        <h5>CSS</h5>
+        <ol>
+          <li><a href="http://daneden.github.io/animate.css/">Animate.css</a></li>
+          <li><a href="http://getbootstrap.com/">Bootstrap 3</a></li>
+        </ol>
+
+        <h5>Images</h5>
+        <a href="http://thestocks.im/">Thestocks</a> 
+        
+      </section>
+      <!-- Fonts / End -->
+
+
+      <hr>
+
+      <section class="section">
+        <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+        
+        <p>
+          <strong>Dan Fisher</strong>
+        </p>
+        <br><br>
+      </section>
+
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+    <script type="text/javascript">
+    SyntaxHighlighter.all()
+    </script>
+  </body>
+</html>

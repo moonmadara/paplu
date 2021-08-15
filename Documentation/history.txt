@@ -1,0 +1,72 @@
+Version 1.1.1
+
+---
+
+Changed and Added files
+
+HTML
+	elements-fa-icons.html
+	index-multi-02.html
+	index-02.html
+
+CSS
+	css/style.less
+	css/style.css
+	vendor/font-awesome/css/font-awesome.min.css
+
+
+OTHR
+	vendor/font-awesome/fonts/*.*
+
+
+=========================
+
+
+Version 1.1.0
+
+---
+
+Changed and Added files
+
+HTML
+	elements-fa-icons.html
+
+CSS
+	css/style.less
+	css/style.css
+	vendor/font-awesome/css/font-awesome.min.css
+
+JS
+	vendor/magnific-popup/jquery.magnific-popup.min.js
+	js/custom.js
+
+OTHR
+	vendor/font-awesome/fonts/*.*
+
+
+=========================
+
+
+Version 1.0.1
+
+---
+
+Changed and Added files
+
+HTML
+	[fix] small presentation fixes
+
+JS
+	js/custom.js
+
+CSS
+	css/style.less
+	css/style.css
+
+
+=========================
+
+
+Version 1.0
+
+    Initial template version.
