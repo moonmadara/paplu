@@ -7964,8 +7964,9 @@ img.mfp-img {
 // --------------------------------------------------
 */
 .footer {
-  background-color: #36274c;
-  background-image: url(../images/bg-footer.jpg);
+ 
+  background-image: radial-gradient(circle, #340b59 0%, #000000 99%);
+
   background-position: 50% 0;
   background-repeat: no-repeat;
   padding: 0;
